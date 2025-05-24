@@ -1,4 +1,4 @@
-const MAX_ROLLS = 10
+const MAX_ROLLS = 6
 const STATE = {
     count: 0,
     lastFace: undefined
@@ -29,7 +29,7 @@ function main() {
     document.getElementById("roll").onclick = function() {
         STATE.count = 0, message.textContent = ""
         let rolls
-        rolls = setInterval(() => {rollDice(currentFace, STATE, image, rolls, message)}, 100)
+        rolls = setInterval(() => {rollDice(currentFace, STATE, image, rolls, message)}, 250)
     }
 }
 
